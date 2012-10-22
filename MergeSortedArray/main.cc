@@ -15,14 +15,10 @@ public:
             return;
         }
         if (A[i] > B[j]) {
-            int tmp = B[j];
-            B[j] = A[i];
-            A[i] = tmp;
+            swap(B[j], A[i]);
             int k = j;
             while (k < n-1 && B[k] > B[k+1]) {
-                tmp = B[k+1];
-                B[k+1] = B[k];
-                B[k] = tmp;
+                swap(B[k], B[k+1]);
                 ++k;
             }
         }
