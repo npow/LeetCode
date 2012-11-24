@@ -1,6 +1,6 @@
 class Solution {
 public:
-    vector<vector<int> > permute(vector<int> &num) {
+    vector<vector<int> > permuteUnique(vector<int> &num) {
         vector<vector<int> > res;
         sort(num.begin(), num.end());
         res.push_back(num);
@@ -33,4 +33,3 @@ public:
         }
     }
 };
-
